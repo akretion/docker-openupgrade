@@ -1,0 +1,50 @@
+odoo:
+    remotes:
+        ak: https://github.com/akretion/OpenUpgrade.git
+        oca: https://github.com/OCA/OpenUpgrade.git
+        sylvain: https://github.com/legalsylvain/OpenUpgrade.git
+    merges:
+        -
+            remote: oca
+            ref: "9.0"
+            ref: "9.0_IMP_account_migration_by_sql"
+        -
+            remote: ak
+            ref: "9.0-an"
+
+
+server-tools:
+    src: https://github.com/OCA/server-tools 9.0
+
+partner-contact:
+    src: https://github.com/OCA/partner-contact 9.0
+
+web:
+    src: https://github.com/OCA/web 9.0
+
+product-attribute:
+    src: https://github.com/OCA/product-attribute 9.0
+
+account-invoicing:
+    src: https://github.com/oca/account-invoicing 9.0
+    
+account-fiscal-rule:
+    src: https://github.com/oca/account-fiscal-rule 9.0
+
+account-reconcile:
+    src: https://github.com/oca/account-reconcile 9.0
+
+account-payment:
+    src: https://github.com/oca/account-payment 9.0
+    
+bank-payment:
+    src: https://github.com/OCA/bank-payment 9.0
+
+intrastat:
+    src: https://github.com/OCA/intrastat-extrastat 9.0
+
+l10n-france:
+    src: https://github.com/OCA/l10n-france 9.0
+
+l10n-brazil:
+    src: https://github.com/OCA/l10n-brazil 9.0

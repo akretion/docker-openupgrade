@@ -1,0 +1,2 @@
+odoorpc
+-e git://github.com/OCA/openupgradelib.git#egg=openupgradelib

@@ -1,0 +1,40 @@
+odoo:
+    remotes:
+        ak: https://github.com/akretion/OpenUpgrade.git
+        oca: https://github.com/OCA/OpenUpgrade.git
+        ef: https://github.com/Eficent/OpenUpgrade.git
+
+    merges:
+        -
+            remote: oca
+            ref: "12.0"
+
+server-tools:
+    src: https://github.com/OCA/server-tools 12.0
+
+partner-contact:
+    src: https://github.com/OCA/partner-contact 12.0
+
+web:
+    src: https://github.com/OCA/web 12.0
+
+product-attribute:
+    src: https://github.com/OCA/product-attribute 12.0
+
+account-invoicing:
+    src: https://github.com/oca/account-invoicing 12.0
+    
+bank-payment:
+    src: https://github.com/OCA/bank-payment 12.0
+
+reporting-engine:
+    src: https://github.com/OCA/reporting-engine 12.0
+    
+intrastat:
+    src: https://github.com/OCA/intrastat-extrastat 12.0
+
+l10n-france:
+    src: https://github.com/OCA/l10n-france 12.0
+
+l10n-brazil:
+    src: https://github.com/OCA/l10n-brazil 12.0

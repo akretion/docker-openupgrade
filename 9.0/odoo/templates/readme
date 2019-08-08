@@ -1,0 +1,4 @@
+You can add in this folder, for example:
+
+- an odoo conf like this one, https://github.com/camptocamp/docker-odoo-project/blob/master/10.0/templates/odoo.cfg.tmpl
+- your own data to mount: images, etc.
