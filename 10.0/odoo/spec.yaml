@@ -1,16 +1,10 @@
 odoo:
     remotes:
         ak: https://github.com/akretion/OpenUpgrade.git
-        oca: https://github.com/OCA/OpenUpgrade.git
         sylvain: https://github.com/legalsylvain/OpenUpgrade.git
+        oca: https://github.com/OCA/OpenUpgrade.git
     merges:
-        -
-            remote: oca
-            ref: "10.0"
-        -
-            remote: ak
-            ref: "10.0-an"
-
+        - oca 10.0
 
 server-tools:
     src: https://github.com/OCA/server-tools 10.0
@@ -32,7 +26,7 @@ account-fiscal-rule:
 
 account-reconcile:
     src: https://github.com/oca/account-reconcile 10.0
- 
+
 account-payment:
     src: https://github.com/oca/account-payment 10.0
 

@@ -1,4 +1,4 @@
-FROM camptocamp/odoo-project:12.0-3.1.2
+FROM camptocamp/odoo-project:12.0-latest
 
 RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
@@ -20,6 +20,4 @@ COPY ./migration.yml /odoo/migration.yml
 COPY ./links /odoo/links
 RUN pip install -e /odoo
 
-COPY backup /backup
-
-ENV LIST_DB=True
+ENV ADDONS_PATH=/odoo/local-src,/odoo/src/addons,/odoo/external-src/bank-payment,/odoo/external-src/intrastat,/odoo/external-src/web,/odoo/external-src/server-tools,/odoo/external-src/account-invoicing,/odoo/external-src/product-attribute,/odoo/external-src/l10n-france,/odoo/external-src/l10n-brazil,odoo/external-src/partner-contact

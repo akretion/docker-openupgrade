@@ -1,18 +1,6 @@
 migration:
-  options:
-    install_command: odoo
   versions:
-    - version: 2018.06.30
-      operations:
-        pre:
-          - "sh -c 'psql -c \"CREATE EXTENSION pg_trgm;\"'"
-        post:
-          - anthem songs.install.base::main
+    - version: 12.0.0
       addons:
         upgrade:
-          - sale
-      modes:
-        demo:
-          operations:
-            post:
-              - anthem songs.install.demo::main
+          - base

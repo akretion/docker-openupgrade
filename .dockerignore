@@ -1,0 +1,15 @@
+**/.git/**/*
+**/.git
+**/.gitignore
+**/.travis.yml
+**/LICENSE
+**/*.pyc
+**/README.md
+**/*.egg-info
+**/i18n/**/*
+!**/i18n/fr.po
+
+# Only for dev
+local-src/**/*
+external-src/**/*
+src/addons

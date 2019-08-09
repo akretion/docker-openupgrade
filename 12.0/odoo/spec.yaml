@@ -3,11 +3,8 @@ odoo:
         ak: https://github.com/akretion/OpenUpgrade.git
         oca: https://github.com/OCA/OpenUpgrade.git
         ef: https://github.com/Eficent/OpenUpgrade.git
-
     merges:
-        -
-            remote: oca
-            ref: "12.0"
+        - oca 12.0
 
 server-tools:
     src: https://github.com/OCA/server-tools 12.0
@@ -23,13 +20,13 @@ product-attribute:
 
 account-invoicing:
     src: https://github.com/oca/account-invoicing 12.0
-    
+
 bank-payment:
     src: https://github.com/OCA/bank-payment 12.0
 
 reporting-engine:
     src: https://github.com/OCA/reporting-engine 12.0
-    
+
 intrastat:
     src: https://github.com/OCA/intrastat-extrastat 12.0
 

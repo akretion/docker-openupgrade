@@ -1,7 +1,3 @@
-networks:
-  default:
-    external:
-      name: dy
 services:
   db:
     environment:
@@ -20,27 +16,22 @@ services:
       - DB_PASS=odoo
       - DB_NAME=openupgrade10
       - RUNNING_ENV=dev
-      - MARABUNTA_MODE=demo
-      - VIRTUAL_HOST=odoo.dy
-      - VIRTUAL_PORT=8069
       - LIMIT_TIME_CPU=6000000
       - LIMIT_TIME_REAL=12000000
       - LIMIT_MEMORY_SOFT=5147483648
       - LIMIT_MEMORY_HARD=5684354560
-      - ADDONS_PATH=/odoo/local-src,/odoo/src/addons,/odoo/external-src/bank-payment,/odoo/external-src/intrastat,/odoo/external-src/web,/odoo/external-src/server-tools,/odoo/external-src/account-invoicing,/odoo/external-src/product-attribute,/odoo/external-src/l10n-france,/odoo/external-src/l10n-brazil,odoo/external-src/partner-contact
-    links:
+    depends_on:
       - db
-#    ports: 
-#      - 8069:8069
-    networks:
-      default:
-        aliases:
-          - odoo.dy
     volumes:
       - ./odoo:/odoo
       - ./data/addons:/data/odoo/addons
       - ./data/filestore:/data/odoo/filestore
       - ./data/sessions:/data/odoo/sessions
+    labels:
+      traefik.enable: true
+      traefik.longpolling.frontend.rule: "Host:migration.dy;PathPrefix:/longpolling/"
+      traefik.www.frontend.rule: "Host:migration.dy"
+      docky.main.service: true
+      docky.user: odoo
+
 version: '3'
-volumes:
-  py3o_tmp: null
