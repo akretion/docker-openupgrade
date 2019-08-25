@@ -1,2 +1,2 @@
 -e git://github.com/OpenERP/openerp-client-lib.git#egg=openerplib
--e git://github.com/OCA/openupgradelib.git#egg=openupgradelib
+-e git://github.com/akretion/openupgradelib.git@experiment-better-logger#egg=openupgradelib
