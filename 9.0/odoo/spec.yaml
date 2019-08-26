@@ -140,7 +140,7 @@ web:
 
 # Akretion Specific tools
 
-ak-odoo-incubator:
-    src: https://github.com/akretion/ak-odoo-incubator 9.0
-    modules:
-      - base_compute_field_after_install
+#ak-odoo-incubator:
+#    src: https://github.com/akretion/ak-odoo-incubator 9.0
+#    modules:
+#      - base_compute_field_after_install
