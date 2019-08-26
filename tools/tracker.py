@@ -23,22 +23,23 @@ MIGRATION_TIME_OUTPUT = '/odoo/migration_time_ouput.txt'
 
 def migrate_module(self, pkg, stage):
     global MIGRATION_TIME
-    if (hasattr(pkg, 'update') or pkg.state == 'to upgrade'):
-        if stage == 'pre':
-            MIGRATION_TIME[pkg.name] = {'start': datetime.now()}
-        if stage == 'post':
-            res = MIGRATION_TIME[pkg.name]
-            res['stop'] = datetime.now()
-            res['duration'] = (res['stop'] - res['start']).seconds / 60
-            _logger.info(
-                'Migrate Module %s, duration %s min', pkg.name, res['duration'])
-            with open(MIGRATION_TIME_OUTPUT, 'a') as out:
-                out.write(u"%s %s %s %s\n" % (
-                    pkg.name,
-                    res['start'],
-                    res['stop'],
-                    res['duration']
-                    ))
-    return ori_migrate_module(self, pkg, stage)
+    update = (hasattr(pkg, 'update') or pkg.state == 'to upgrade')
+    if update and stage == 'pre':
+        MIGRATION_TIME[pkg.name] = {'start': datetime.now()}
+    result = ori_migrate_module(self, pkg, stage)
+    if update and stage == 'post':
+        res = MIGRATION_TIME[pkg.name]
+        res['stop'] = datetime.now()
+        res['duration'] = (res['stop'] - res['start']).seconds / 60
+        _logger.info(
+            'Migrate Module %s, duration %s min', pkg.name, res['duration'])
+        with open(MIGRATION_TIME_OUTPUT, 'a') as out:
+            out.write(u"%s %s %s %s\n" % (
+                pkg.name,
+                res['start'].strftime('%Y-%m-%d %H:%M:%S'),
+                res['stop'].strftime('%Y-%m-%d %H:%M:%S'),
+                res['duration']
+                ))
+    return result
 
 MigrationManager.migrate_module = migrate_module
