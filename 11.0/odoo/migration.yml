@@ -4,3 +4,4 @@ migration:
       addons:
         upgrade:
           - base
+          - base_sparse_field
