@@ -5,6 +5,7 @@ odoo:
         sylvain: https://github.com/legalsylvain/OpenUpgrade.git
     merges:
         - oca 11.0
+        - ak 11.0-spare-field-dependency
 
 server-tools:
     src: https://github.com/OCA/server-tools 11.0
