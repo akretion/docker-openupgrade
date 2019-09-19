@@ -5,6 +5,7 @@ odoo:
         ef: https://github.com/Eficent/OpenUpgrade.git
     merges:
         - oca 12.0
+        - ak 12.0-customize-admin-email
 
 server-tools:
     src: https://github.com/OCA/server-tools 12.0
