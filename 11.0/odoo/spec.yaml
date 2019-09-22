@@ -33,3 +33,6 @@ l10n-france:
 
 l10n-brazil:
     src: https://github.com/OCA/l10n-brazil 11.0
+
+pim:
+    src: https://github.com/akretion/odoo-pim 1x.x
