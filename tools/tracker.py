@@ -19,7 +19,7 @@ _logger = logging.getLogger(__name__)
 ori_migrate_module = MigrationManager.migrate_module
 
 MIGRATION_TIME = {}
-MIGRATION_TIME_OUTPUT = '/odoo/migration_time_ouput.txt'
+MIGRATION_TIME_OUTPUT = '/tmp/migration_time_ouput.txt'
 
 def migrate_module(self, pkg, stage):
     global MIGRATION_TIME
