@@ -20,4 +20,4 @@ COPY ./migration.yml /odoo/migration.yml
 COPY ./links /odoo/links
 RUN pip install -e /odoo
 
-ENV ADDONS_PATH=/odoo/local-src,/odoo/src/addons,/odoo/external-src/bank-payment,/odoo/external-src/intrastat,/odoo/external-src/web,/odoo/external-src/server-tools,/odoo/external-src/account-invoicing,/odoo/external-src/product-attribute,/odoo/external-src/l10n-france,/odoo/external-src/l10n-brazil,odoo/external-src/partner-contact
+ENV ADDONS_PATH=/odoo/local-src,/odoo/links,/odoo/src/addons,/odoo/external-src/bank-payment,/odoo/external-src/intrastat,/odoo/external-src/web,/odoo/external-src/server-tools,/odoo/external-src/account-invoicing,/odoo/external-src/product-attribute,/odoo/external-src/l10n-france,/odoo/external-src/l10n-brazil,/odoo/external-src/partner-contact

@@ -6,38 +6,134 @@ odoo:
     merges:
         - oca 10.0
 
-server-tools:
-    src: https://github.com/OCA/server-tools 10.0
+account-financial-reporting:
+    src: https://github.com/OCA/account-financial-reporting 10.0
 
-partner-contact:
-    src: https://github.com/OCA/partner-contact 10.0
-
-web:
-    src: https://github.com/OCA/web 10.0
-
-product-attribute:
-    src: https://github.com/OCA/product-attribute 10.0
-
-account-invoicing:
-    src: https://github.com/oca/account-invoicing 10.0
+account-financial-tools:
+    src: https://github.com/OCA/account-financial-tools 10.0
 
 account-fiscal-rule:
-    src: https://github.com/oca/account-fiscal-rule 10.0
+    src: https://github.com/OCA/account-fiscal-rule 10.0
 
-account-reconcile:
-    src: https://github.com/oca/account-reconcile 10.0
+account-invoice-reporting:
+    src: https://github.com/OCA/account-invoice-reporting 10.0
+
+account-invoicing:
+    src: https://github.com/OCA/account-invoicing 10.0
 
 account-payment:
-    src: https://github.com/oca/account-payment 10.0
+    src: https://github.com/OCA/account-payment 10.0
+
+account-reconcile:
+    src: https://github.com/OCA/account-reconcile 10.0
 
 bank-payment:
     src: https://github.com/OCA/bank-payment 10.0
 
+bank-statement-import:
+    src: https://github.com/OCA/bank-statement-import 10.0
+
+community-data-files:
+    src: https://github.com/OCA/community-data-files 10.0
+
+connector:
+    src: https://github.com/OCA/connector 10.0
+
+connector-ecommerce:
+    src: https://github.com/OCA/connector-ecommerce 10.0
+
+connector-telephony:
+    src: https://github.com/OCA/connector-telephony 10.0
+
+contract:
+    src: https://github.com/OCA/contract 10.0
+
+crm:
+    src: https://github.com/OCA/crm 10.0
+
+delivery-carrier:
+    src: https://github.com/OCA/delivery-carrier 10.0
+
+e-commerce:
+    src: https://github.com/OCA/e-commerce 10.0
+
+edi:
+    src: https://github.com/OCA/edi 10.0
+
+hr:
+    src: https://github.com/OCA/hr 10.0
+
+hr-timesheet:
+    src: https://github.com/OCA/hr-timesheet 10.0
+
 intrastat:
-    src: https://github.com/OCA/intrastat-extrastat 10.0
+    src: https://github.com/OCA/intrastat 10.0
 
 l10n-france:
     src: https://github.com/OCA/l10n-france 10.0
 
 l10n-brazil:
     src: https://github.com/OCA/l10n-brazil 10.0
+
+manufacture:
+    src: https://github.com/OCA/manufacture 10.0
+
+partner-contact:
+    src: https://github.com/OCA/partner-contact 10.0
+
+pos:
+    src: https://github.com/OCA/pos 10.0
+
+product-attribute:
+    src: https://github.com/OCA/product-attribute 10.0
+
+product-variant:
+    src: https://github.com/OCA/product-variant 10.0
+
+project:
+    src: https://github.com/OCA/project 10.0
+
+project-reporting:
+    src: https://github.com/OCA/project-reporting 10.0
+
+purchase-reporting:
+    src: https://github.com/OCA/purchase-reporting 10.0
+
+purchase-workflow:
+    src: https://github.com/OCA/purchase-workflow 10.0
+
+reporting-engine:
+    src: https://github.com/OCA/reporting-engine 10.0
+
+sale-financial:
+    src: https://github.com/OCA/sale-financial 10.0
+
+sale-reporting:
+    src: https://github.com/OCA/sale-reporting 10.0
+
+sale-workflow:
+    src: https://github.com/OCA/sale-workflow 10.0
+
+server-auth:
+    src: https://github.com/OCA/server-auth 10.0
+
+server-tools:
+    src: https://github.com/OCA/server-tools 10.0
+
+social:
+    src: https://github.com/OCA/social 10.0
+
+stock-logistics-barcode:
+    src: https://github.com/OCA/stock-logistics-barcode 10.0
+
+stock-logistics-reporting:
+    src: https://github.com/OCA/stock-logistics-reporting 10.0
+
+stock-logistics-warehouse:
+    src: https://github.com/OCA/stock-logistics-warehouse 10.0
+
+stock-logistics-workflow:
+    src: https://github.com/OCA/stock-logistics-workflow 10.0
+
+web:
+    src: https://github.com/OCA/web 10.0
