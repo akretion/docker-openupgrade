@@ -1,0 +1,54 @@
+openupgradelib==2.0.0
+
+# viivakoodi is a fork of pyBarcode
+viivakoodi
+python-stdnum
+requests
+unicodecsv
+email_validator
+xlwt
+xlsxwriter
+py3o.formats
+chardet
+# auth_keycloak test mocks
+responses
+
+requests
+invoice2data>=0.2.74
+factur-x>=0.3
+premailer
+sendgrid<v6.0.0
+cachetools>=2.0.1,<3.0.0
+unittest2
+phonenumbers
+py-Asterisk
+SOAPpy
+phonenumbers
+py-Asterisk
+python-ldap
+acme_tiny
+IPy
+email_validator
+pyotp
+pysftp
+fdb
+sqlalchemy
+raven
+checksumdir
+python-stdnum
+pyopenssl
+odoorpc
+pycountry>=0.19
+reportlab
+unidecode==0.04.20
+suds==0.4
+signxml==2.5.2
+qrcode
+py3o.template==0.9.13
+sh >=1.12.14
+num2words==0.5.4
+# TODO - https://github.com/OCA/l10n-brazil/issues/669
+-e git://github.com/odoo-brazil/pybrasil.git#egg=pybrasil
+-e git://github.com/odoo-brazil/geraldo.git#egg=geraldo
+-e git://github.com/odoo-brazil/PySPED.git@10.0#egg=PySPED
+zeep==3.3.1
