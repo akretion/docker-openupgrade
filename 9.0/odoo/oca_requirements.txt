@@ -1,0 +1,26 @@
+roulier
+phonenumbers
+pycountry>=16.11.08
+# viivakoodi is a fork of pyBarcode
+viivakoodi
+requests
+unicodecsv
+xlwt
+xlsxwriter
+responses
+requests
+py-Asterisk
+python-ldap
+unidecode
+acme_tiny
+IPy
+validate_email
+pysftp
+pyotp
+fs==0.5.4
+oauthlib
+pyjwt
+cryptography
+python-stdnum
+suds
+num2words
