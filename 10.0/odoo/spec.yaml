@@ -5,6 +5,7 @@ odoo:
         oca: https://github.com/OCA/OpenUpgrade.git
     merges:
         - oca 10.0
+        - ak 10.0-fix_mrp_perf
 
 account-financial-reporting:
     src: https://github.com/OCA/account-financial-reporting 10.0
