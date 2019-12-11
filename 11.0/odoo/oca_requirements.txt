@@ -1,0 +1,41 @@
+# viivakoodi is a fork of pyBarcode
+viivakoodi
+email_validator
+xlsxwriter
+xlrd
+fdfgen
+ofxparse
+Pygments
+# auth_signup_verify_email
+email_validator
+# auth_saml
+lasso
+# auth_totp
+pyotp
+# auth_u2f
+python-u2flib-server
+responses
+
+requests
+click
+# web_widget_bokeh_chart
+bokeh==0.12.7
+PyPDF2
+phonenumbers
+premailer
+extract-msg
+cachetools>=2.0.1
+
+phonenumbers
+py-Asterisk
+SOAPpy
+xlsxwriter
+xlrd
+checksumdir
+raven
+pysftp
+acme_tiny
+IPy
+pyopenssl
+numpy
+pycountry>=0.19

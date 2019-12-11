@@ -11,9 +11,14 @@ RUN pip install -e /odoo/src
 COPY ./requirements.txt /odoo/requirements.txt
 RUN pip install -r /odoo/requirements.txt
 
-COPY ./external-src /odoo/external-src
-RUN find /odoo/external-src/ -name 'requirements.txt' -exec cat {} \; > /odoo/oca_requirements.txt
+# generate oca requirement with
+# find odoo/external-src/ -name 'requirements.txt' -exec cat {} \; > odoo/oca_requirements.txt
+# then remove duplicate
+
+COPY ./oca_requirements.txt /odoo/oca_requirements.txt
 RUN pip install -r /odoo/oca_requirements.txt
+
+COPY ./external-src /odoo/external-src
 COPY ./local-src /odoo/local-src
 COPY ./VERSION /odoo/VERSION
 COPY ./setup.py /odoo/setup.py
