@@ -19,7 +19,7 @@ _logger = logging.getLogger(__name__)
 ori_migrate_module = MigrationManager.migrate_module
 
 MIGRATION_TIME = {}
-MIGRATION_TIME_OUTPUT = '/tmp/migration_time_ouput.txt'
+MIGRATION_TIME_OUTPUT = '/shared/migration_time_ouput.csv'
 
 def migrate_module(self, pkg, stage):
     global MIGRATION_TIME
@@ -34,7 +34,7 @@ def migrate_module(self, pkg, stage):
         _logger.info(
             'Migrate Module %s, duration %s min', pkg.name, res['duration'])
         with open(MIGRATION_TIME_OUTPUT, 'a') as out:
-            out.write(u"%s %s %s %s\n" % (
+            out.write(u"%s;%s;%s;%s\n" % (
                 pkg.name,
                 res['start'].strftime('%Y-%m-%d %H:%M:%S'),
                 res['stop'].strftime('%Y-%m-%d %H:%M:%S'),
