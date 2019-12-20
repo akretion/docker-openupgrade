@@ -1,3 +1,3 @@
 odoorpc
--e git://github.com/OCA/openupgradelib.git#egg=openupgradelib
+-e git://github.com/akretion/openupgradelib.git@fix-memory-issue#egg=openupgradelib
 raven
