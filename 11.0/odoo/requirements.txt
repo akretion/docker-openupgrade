@@ -1,3 +1,5 @@
 odoorpc
--e git://github.com/akretion/openupgradelib.git@fix-memory-issue#egg=openupgradelib
 raven
+
+# fix memory-issue
+-e git://github.com/akretion/openupgradelib.git@15c4e7c01b1789b5e2cff1342bc9a2f3c4ed9161#egg=openupgradelib
