@@ -5,7 +5,7 @@ odoo:
         ef: https://github.com/Eficent/OpenUpgrade.git
     merges:
         - oca 12.0
-        - ak 12.0-customize-admin-email
+        - ak 12.0-fix-issue-with-partner-email-constraint
         - ak 12.0-fix-layout-perf-on-sale-and-invoice
 
 account-financial-reporting:
