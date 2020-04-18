@@ -8,9 +8,6 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 COPY ./src /odoo/src
 RUN pip install -e /odoo/src
 
-COPY ./requirements.txt /odoo/requirements.txt
-RUN pip install -r /odoo/requirements.txt
-
 # generate oca requirement with
 # find odoo/external-src/ -name 'requirements.txt' -exec cat {} \; > odoo/oca_requirements.txt
 # then remove duplicate
@@ -18,6 +15,8 @@ RUN pip install -r /odoo/requirements.txt
 COPY ./oca_requirements.txt /odoo/oca_requirements.txt
 RUN pip install -r /odoo/oca_requirements.txt
 
+COPY ./requirements.txt /odoo/requirements.txt
+RUN pip install -r /odoo/requirements.txt
 
 COPY ./external-src /odoo/external-src
 COPY ./local-src /odoo/local-src
