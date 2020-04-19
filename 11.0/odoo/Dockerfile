@@ -15,6 +15,7 @@ RUN pip install -e /odoo/src
 COPY ./oca_requirements.txt /odoo/oca_requirements.txt
 RUN pip install -r /odoo/oca_requirements.txt
 
+COPY ./dev-lib /dev-lib
 COPY ./requirements.txt /odoo/requirements.txt
 RUN pip install -r /odoo/requirements.txt
 

@@ -138,3 +138,11 @@ stock-logistics-workflow:
 
 web:
     src: https://github.com/OCA/web 11.0
+
+../dev-lib/openupgradelib:
+    remotes:
+        ak: https://github.com/akretion/openupgradelib
+        oca: https://github.com/oca/openupgradelib
+    merges:
+        - oca master
+        - ak fix-memory-issue
