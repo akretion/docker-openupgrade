@@ -1,2 +1,2 @@
 -e git://github.com/OpenERP/openerp-client-lib.git#egg=openerplib
--e git://github.com/akretion/openupgradelib.git@8fa83a7a5fb1efb3bc2406b4b6fc59925a7590ae#egg=openupgradelib
+-e git://github.com/oca/openupgradelib.git@master#egg=openupgradelib
