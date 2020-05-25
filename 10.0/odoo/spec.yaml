@@ -71,8 +71,9 @@ hr-timesheet:
 intrastat:
     src: https://github.com/OCA/intrastat 10.0
 
+#last version seem to be broken
 l10n-france:
-    src: https://github.com/OCA/l10n-france 10.0
+    src: https://github.com/OCA/l10n-france 9ae582ab2a4fdda6037a3243443f61c12d36a7e9
 
 l10n-brazil:
     src: https://github.com/OCA/l10n-brazil 10.0
