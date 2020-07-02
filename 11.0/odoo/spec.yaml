@@ -6,7 +6,7 @@ odoo:
     merges:
         - oca 11.0
         - ak 11.0-spare-field-dependency
-
+        - ak 11.0-fix-perf-issue
 account-financial-reporting:
     src: https://github.com/OCA/account-financial-reporting 11.0
 
