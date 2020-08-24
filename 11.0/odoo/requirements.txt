@@ -1,5 +1,6 @@
 odoorpc
 raven
+urllib3=1.24.3
 
 # fix memory-issue
 -e /dev-lib/openupgradelib
