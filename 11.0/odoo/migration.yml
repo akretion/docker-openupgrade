@@ -5,3 +5,4 @@ migration:
         upgrade:
           - base
           - base_sparse_field
+          - stock

@@ -3,4 +3,4 @@ migration:
     - version: 10.0.0
       addons:
         upgrade:
-          - stock
+          - base
