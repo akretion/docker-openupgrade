@@ -1,4 +1,4 @@
-python-barcode
+python-barcode==0.12.0
 py3o.template
 py3o.formats
 # auth_totp
@@ -18,6 +18,7 @@ phonenumbers
 # mail_inline_css
 premailer
 cachetools>=2.0.1
+requests-oauthlib
 
 Voicent-Python
 SOAPpy
