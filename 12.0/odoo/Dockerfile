@@ -2,7 +2,10 @@ FROM camptocamp/odoo-project:12.0-latest-batteries
 
 RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
-    apt-get install -y git vim && \
+    apt-get install -y git vim libpq-dev && \
+    apt-get upgrade -y && \
+    /install/dev_package.sh && \
+    pip install psycopg2 --upgrade && \
     apt-get clean
 
 COPY ./src /odoo/src
