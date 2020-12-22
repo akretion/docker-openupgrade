@@ -5,6 +5,7 @@ odoo:
         ef: https://github.com/Eficent/OpenUpgrade.git
     merges:
         - oca 13.0
+        - ak 13.0-fix-product-migration
 
 account-financial-reporting:
     src: https://github.com/OCA/account-financial-reporting 13.0
