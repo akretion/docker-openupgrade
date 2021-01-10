@@ -52,6 +52,6 @@ and create a copy of it on which we will run the migration:
 ```
 createdb prod-8.0
 time psql prod-8.0 < /odoo/backup/prod.dump
-createdb openupgrade9 -T 8.0-prod
+createdb openupgrade9 -T prod-8.0
 time odoo -d openupgrade9 -u all --stop-after-init
 ```
