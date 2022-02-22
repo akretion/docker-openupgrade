@@ -1,0 +1,6 @@
+migration:
+  versions:
+    - version: 14.0.0
+      addons:
+        upgrade:
+          - base
