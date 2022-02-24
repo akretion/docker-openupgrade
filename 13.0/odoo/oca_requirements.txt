@@ -33,3 +33,6 @@ pycountry
 num2words==0.5.4
 pycep-correios
 erpbrasil.base==1.1.0
+python-jose[cryptography] # auth_oidc
+apispec # rest modules
+ovh # account_invoice_download_ovh

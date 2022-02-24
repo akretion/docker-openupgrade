@@ -6,6 +6,9 @@ odoo:
     merges:
         - oca 13.0
 
+account-closing:
+    src: https://github.com/OCA/account-closing 13.0
+
 account-financial-reporting:
     src: https://github.com/OCA/account-financial-reporting 13.0
 
@@ -27,6 +30,12 @@ account-payment:
 account-reconcile:
     src: https://github.com/OCA/account-reconcile 13.0
 
+account-analytic:
+    src: https://github.com/OCA/account-analytic 13.0
+
+currency:
+    src: https://github.com/OCA/currency 13.0
+
 bank-payment:
     src: https://github.com/OCA/bank-payment 13.0
 
@@ -36,8 +45,13 @@ bank-statement-import:
 community-data-files:
     src: https://github.com/OCA/community-data-files 13.0
 
+account-analytic:
+    src: https://github.com/OCA/account-analytic 13.0
 connector:
     src: https://github.com/OCA/connector 13.0
+
+queue:
+    src: https://github.com/OCA/queue 13.0
 
 connector-ecommerce:
     src: https://github.com/OCA/connector-ecommerce 13.0
@@ -63,8 +77,11 @@ edi:
 hr:
     src: https://github.com/OCA/hr 13.0
 
-hr-timesheet:
-    src: https://github.com/OCA/hr-timesheet 13.0
+timesheet:
+    src: https://github.com/OCA/timesheet 13.0
+
+multi-company:
+    src: https://github.com/OCA/multi-company/ 13.0
 
 intrastat:
     src: https://github.com/OCA/intrastat 13.0
@@ -117,8 +134,23 @@ sale-workflow:
 server-auth:
     src: https://github.com/OCA/server-auth 13.0
 
+server-backend:
+    src: https://github.com/OCA/server-backend 13.0
+
+server-env:
+    src: https://github.com/OCA/server-env 13.0
+
+server-ux:
+    src: https://github.com/OCA/server-ux 13.0
+
+server-brand:
+    src: https://github.com/OCA/server-brand 13.0
+
 server-tools:
     src: https://github.com/OCA/server-tools 13.0
+
+rest-framework:
+    src: https://github.com/OCA/rest-framework 13.0
 
 social:
     src: https://github.com/OCA/social 13.0

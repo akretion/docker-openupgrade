@@ -1,3 +1,4 @@
 odoorpc
 -e git://github.com/OCA/openupgradelib.git#egg=openupgradelib
 raven
+click-odoo-contrib # optional but can be nice to have

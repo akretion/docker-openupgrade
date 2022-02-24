@@ -1,10 +1,17 @@
-odoo:
+openupgrade:
     remotes:
         ak: https://github.com/akretion/OpenUpgrade.git
         oca: https://github.com/OCA/OpenUpgrade.git
         ef: https://github.com/Eficent/OpenUpgrade.git
     merges:
         - oca 15.0
+
+odoo:
+    src: https://github.com/odoo/odoo 15.0
+    depth: 1
+
+account-closing:
+    src: https://github.com/OCA/account-closing 15.0
 
 account-financial-reporting:
     src: https://github.com/OCA/account-financial-reporting 15.0
@@ -27,6 +34,12 @@ account-payment:
 account-reconcile:
     src: https://github.com/OCA/account-reconcile 15.0
 
+account-analytic:
+    src: https://github.com/OCA/account-analytic 15.0
+
+currency:
+    src: https://github.com/OCA/currency 15.0
+
 bank-payment:
     src: https://github.com/OCA/bank-payment 15.0
 
@@ -36,8 +49,13 @@ bank-statement-import:
 community-data-files:
     src: https://github.com/OCA/community-data-files 15.0
 
+account-analytic:
+    src: https://github.com/OCA/account-analytic 15.0
 connector:
     src: https://github.com/OCA/connector 15.0
+
+queue:
+    src: https://github.com/OCA/queue 15.0
 
 connector-ecommerce:
     src: https://github.com/OCA/connector-ecommerce 15.0
@@ -63,8 +81,11 @@ edi:
 hr:
     src: https://github.com/OCA/hr 15.0
 
-hr-timesheet:
-    src: https://github.com/OCA/hr-timesheet 15.0
+timesheet:
+    src: https://github.com/OCA/timesheet 15.0
+
+multi-company:
+    src: https://github.com/OCA/multi-company/ 15.0
 
 intrastat:
     src: https://github.com/OCA/intrastat 15.0
@@ -117,8 +138,23 @@ sale-workflow:
 server-auth:
     src: https://github.com/OCA/server-auth 15.0
 
+server-backend:
+    src: https://github.com/OCA/server-backend 15.0
+
+server-env:
+    src: https://github.com/OCA/server-env 15.0
+
+server-ux:
+    src: https://github.com/OCA/server-ux 15.0
+
+server-brand:
+    src: https://github.com/OCA/server-brand 15.0
+
 server-tools:
     src: https://github.com/OCA/server-tools 15.0
+
+rest-framework:
+    src: https://github.com/OCA/rest-framework 15.0
 
 social:
     src: https://github.com/OCA/social 15.0
