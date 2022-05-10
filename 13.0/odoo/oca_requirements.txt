@@ -36,3 +36,4 @@ erpbrasil.base==1.1.0
 python-jose[cryptography] # auth_oidc
 apispec # rest modules
 ovh # account_invoice_download_ovh
+astor # base_view_inheritance_extension
