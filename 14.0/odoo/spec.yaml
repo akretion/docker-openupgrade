@@ -7,12 +7,6 @@ openupgrade:
     merges:
         - oca 14.0
         - ak 14-module-renaming
-        - ef 14.0-mig-stock_account
-        - ef 13.0-mig-sale_stock
-        - ef 14.0-mig-stock
-        - ursais 14.0-mig-purchase_stock
-        - ef 13.0-mig-sale_stock
-        - ef 14.0-mig-purchase
 
 odoo:
     src: https://github.com/odoo/odoo 14.0
