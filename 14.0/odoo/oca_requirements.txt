@@ -41,3 +41,4 @@ python-stdnum>=1.14 # l10n_fr_intrastat_service
 
 astor # base_view_inheritance_extension
 python-slugify # shopinvader
+odoo_test_helper
