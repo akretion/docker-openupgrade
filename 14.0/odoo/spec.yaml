@@ -194,3 +194,10 @@ odoo-mooncard-connector:
 
 shopinvader:
     src: https://github.com/shopinvader/odoo-shopinvader 14.0
+
+
+subcontractor:
+    remotes:
+        ak: https://github.com/akretion/subcontractor.git
+    merges:
+        - ak 14.0
