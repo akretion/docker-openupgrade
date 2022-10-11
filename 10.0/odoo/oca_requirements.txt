@@ -41,7 +41,7 @@ odoorpc
 pycountry>=0.19
 reportlab
 unidecode==0.04.20
-suds==0.4
+suds==1.0.0
 signxml==2.5.2
 qrcode
 py3o.template==0.9.13
