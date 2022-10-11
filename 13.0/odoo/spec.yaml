@@ -1,0 +1,171 @@
+odoo:
+    remotes:
+        ak: https://github.com/akretion/OpenUpgrade.git
+        oca: https://github.com/OCA/OpenUpgrade.git
+        ef: https://github.com/Eficent/OpenUpgrade.git
+    merges:
+        - oca 13.0
+
+account-closing:
+    src: https://github.com/OCA/account-closing 13.0
+
+account-financial-reporting:
+    src: https://github.com/OCA/account-financial-reporting 13.0
+
+account-financial-tools:
+    src: https://github.com/OCA/account-financial-tools 13.0
+
+account-fiscal-rule:
+    src: https://github.com/OCA/account-fiscal-rule 13.0
+
+account-invoice-reporting:
+    src: https://github.com/OCA/account-invoice-reporting 13.0
+
+account-invoicing:
+    src: https://github.com/OCA/account-invoicing 13.0
+
+account-payment:
+    src: https://github.com/OCA/account-payment 13.0
+
+account-reconcile:
+    src: https://github.com/OCA/account-reconcile 13.0
+
+account-analytic:
+    src: https://github.com/OCA/account-analytic 13.0
+
+currency:
+    src: https://github.com/OCA/currency 13.0
+
+bank-payment:
+    src: https://github.com/OCA/bank-payment 13.0
+
+bank-statement-import:
+    src: https://github.com/OCA/bank-statement-import 13.0
+
+community-data-files:
+    src: https://github.com/OCA/community-data-files 13.0
+
+account-analytic:
+    src: https://github.com/OCA/account-analytic 13.0
+connector:
+    src: https://github.com/OCA/connector 13.0
+
+queue:
+    src: https://github.com/OCA/queue 13.0
+
+connector-ecommerce:
+    src: https://github.com/OCA/connector-ecommerce 13.0
+
+connector-telephony:
+    src: https://github.com/OCA/connector-telephony 13.0
+
+contract:
+    src: https://github.com/OCA/contract 13.0
+
+crm:
+    src: https://github.com/OCA/crm 13.0
+
+delivery-carrier:
+    src: https://github.com/OCA/delivery-carrier 13.0
+
+e-commerce:
+    src: https://github.com/OCA/e-commerce 13.0
+
+edi:
+    src: https://github.com/OCA/edi 13.0
+
+hr:
+    src: https://github.com/OCA/hr 13.0
+
+timesheet:
+    src: https://github.com/OCA/timesheet 13.0
+
+multi-company:
+    src: https://github.com/OCA/multi-company/ 13.0
+
+intrastat:
+    src: https://github.com/OCA/intrastat 13.0
+
+l10n-france:
+    src: https://github.com/OCA/l10n-france 13.0
+
+l10n-brazil:
+    src: https://github.com/OCA/l10n-brazil 13.0
+
+manufacture:
+    src: https://github.com/OCA/manufacture 13.0
+
+partner-contact:
+    src: https://github.com/OCA/partner-contact 13.0
+
+pos:
+    src: https://github.com/OCA/pos 13.0
+
+product-attribute:
+    src: https://github.com/OCA/product-attribute 13.0
+
+product-variant:
+    src: https://github.com/OCA/product-variant 13.0
+
+project:
+    src: https://github.com/OCA/project 13.0
+
+project-reporting:
+    src: https://github.com/OCA/project-reporting 13.0
+
+purchase-reporting:
+    src: https://github.com/OCA/purchase-reporting 13.0
+
+purchase-workflow:
+    src: https://github.com/OCA/purchase-workflow 13.0
+
+reporting-engine:
+    src: https://github.com/OCA/reporting-engine 13.0
+
+sale-financial:
+    src: https://github.com/OCA/sale-financial 13.0
+
+sale-reporting:
+    src: https://github.com/OCA/sale-reporting 13.0
+
+sale-workflow:
+    src: https://github.com/OCA/sale-workflow 13.0
+
+server-auth:
+    src: https://github.com/OCA/server-auth 13.0
+
+server-backend:
+    src: https://github.com/OCA/server-backend 13.0
+
+server-env:
+    src: https://github.com/OCA/server-env 13.0
+
+server-ux:
+    src: https://github.com/OCA/server-ux 13.0
+
+server-brand:
+    src: https://github.com/OCA/server-brand 13.0
+
+server-tools:
+    src: https://github.com/OCA/server-tools 13.0
+
+rest-framework:
+    src: https://github.com/OCA/rest-framework 13.0
+
+social:
+    src: https://github.com/OCA/social 13.0
+
+stock-logistics-barcode:
+    src: https://github.com/OCA/stock-logistics-barcode 13.0
+
+stock-logistics-reporting:
+    src: https://github.com/OCA/stock-logistics-reporting 13.0
+
+stock-logistics-warehouse:
+    src: https://github.com/OCA/stock-logistics-warehouse 13.0
+
+stock-logistics-workflow:
+    src: https://github.com/OCA/stock-logistics-workflow 13.0
+
+web:
+    src: https://github.com/OCA/web 13.0

@@ -1,0 +1,203 @@
+openupgrade:
+    remotes:
+        ak: https://github.com/akretion/OpenUpgrade.git
+        oca: https://github.com/OCA/OpenUpgrade.git
+        ef: https://github.com/Eficent/OpenUpgrade.git
+        ursais: https://github.com/ursais/OpenUpgrade.git
+    merges:
+        - oca 14.0
+        - ak 14-module-renaming
+
+odoo:
+    src: https://github.com/odoo/odoo 14.0
+    depth: 1
+
+account-closing:
+    src: https://github.com/OCA/account-closing 14.0
+
+account-financial-reporting:
+    src: https://github.com/OCA/account-financial-reporting 14.0
+
+account-financial-tools:
+    src: https://github.com/OCA/account-financial-tools 14.0
+
+account-fiscal-rule:
+    src: https://github.com/OCA/account-fiscal-rule 14.0
+
+account-invoice-reporting:
+    src: https://github.com/OCA/account-invoice-reporting 14.0
+
+account-invoicing:
+    src: https://github.com/OCA/account-invoicing 14.0
+
+account-payment:
+    src: https://github.com/OCA/account-payment 14.0
+
+account-reconcile:
+    src: https://github.com/OCA/account-reconcile 14.0
+
+account-analytic:
+    src: https://github.com/OCA/account-analytic 14.0
+
+currency:
+    src: https://github.com/OCA/currency 14.0
+
+bank-payment:
+    src: https://github.com/OCA/bank-payment 14.0
+
+bank-statement-import:
+    src: https://github.com/OCA/bank-statement-import 14.0
+
+community-data-files:
+    src: https://github.com/OCA/community-data-files 14.0
+
+account-analytic:
+    src: https://github.com/OCA/account-analytic 14.0
+connector:
+    src: https://github.com/OCA/connector 14.0
+
+queue:
+    src: https://github.com/OCA/queue 14.0
+
+connector-ecommerce:
+    src: https://github.com/OCA/connector-ecommerce 14.0
+
+connector-telephony:
+    src: https://github.com/OCA/connector-telephony 14.0
+
+contract:
+    src: https://github.com/OCA/contract 14.0
+
+crm:
+    src: https://github.com/OCA/crm 14.0
+
+delivery-carrier:
+    src: https://github.com/OCA/delivery-carrier 14.0
+
+e-commerce:
+    src: https://github.com/OCA/e-commerce 14.0
+
+edi:
+    src: https://github.com/OCA/edi 14.0
+
+hr:
+    src: https://github.com/OCA/hr 14.0
+
+timesheet:
+    src: https://github.com/OCA/timesheet 14.0
+
+multi-company:
+    src: https://github.com/OCA/multi-company/ 14.0
+
+intrastat:
+    src: https://github.com/OCA/intrastat 14.0
+
+l10n-france:
+    src: https://github.com/OCA/l10n-france 14.0
+
+l10n-brazil:
+    src: https://github.com/OCA/l10n-brazil 14.0
+
+manufacture:
+    src: https://github.com/OCA/manufacture 14.0
+
+partner-contact:
+    src: https://github.com/OCA/partner-contact 14.0
+
+pos:
+    src: https://github.com/OCA/pos 14.0
+
+product-attribute:
+    src: https://github.com/OCA/product-attribute 14.0
+
+product-variant:
+    src: https://github.com/OCA/product-variant 14.0
+
+project:
+    src: https://github.com/OCA/project 14.0
+
+project-reporting:
+    src: https://github.com/OCA/project-reporting 14.0
+
+purchase-reporting:
+    src: https://github.com/OCA/purchase-reporting 14.0
+
+purchase-workflow:
+    src: https://github.com/OCA/purchase-workflow 14.0
+
+reporting-engine:
+    src: https://github.com/OCA/reporting-engine 14.0
+
+sale-financial:
+    src: https://github.com/OCA/sale-financial 14.0
+
+sale-reporting:
+    src: https://github.com/OCA/sale-reporting 14.0
+
+sale-workflow:
+    src: https://github.com/OCA/sale-workflow 14.0
+
+server-auth:
+    src: https://github.com/OCA/server-auth 14.0
+
+server-backend:
+    src: https://github.com/OCA/server-backend 14.0
+
+server-env:
+    src: https://github.com/OCA/server-env 14.0
+
+server-ux:
+    src: https://github.com/OCA/server-ux 14.0
+
+server-brand:
+    src: https://github.com/OCA/server-brand 14.0
+
+server-tools:
+    src: https://github.com/OCA/server-tools 14.0
+
+rest-framework:
+    src: https://github.com/OCA/rest-framework 14.0
+
+social:
+    src: https://github.com/OCA/social 14.0
+
+stock-logistics-barcode:
+    src: https://github.com/OCA/stock-logistics-barcode 14.0
+
+stock-logistics-reporting:
+    src: https://github.com/OCA/stock-logistics-reporting 14.0
+
+stock-logistics-warehouse:
+    src: https://github.com/OCA/stock-logistics-warehouse 14.0
+
+stock-logistics-workflow:
+    src: https://github.com/OCA/stock-logistics-workflow 14.0
+
+web:
+    src: https://github.com/OCA/web 14.0
+
+
+# Not OCA generic
+bank-statement-reconcile-simple:
+    src: https://github.com/akretion/bank-statement-reconcile-simple 14.0
+
+odoo-usability:
+    src: https://github.com/akretion/odoo-usability 14.0
+
+odoo-mooncard-connector:
+    src: https://github.com/akretion/odoo-mooncard-connector 14.0
+    remotes:
+        ak: https://github.com/akretion/odoo-mooncard-connector.git
+    merges:
+        - ak 14.0
+        - ak 14-migration-script-base-newgen-payment-card
+
+shopinvader:
+    src: https://github.com/shopinvader/odoo-shopinvader 14.0
+
+
+subcontractor:
+    remotes:
+        ak: https://github.com/akretion/subcontractor.git
+    merges:
+        - ak 14.0
