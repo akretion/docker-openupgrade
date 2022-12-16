@@ -1,4 +1,4 @@
-FROM camptocamp/odoo-project:14.0-latest-batteries
+FROM ghcr.io/camptocamp/odoo-project:14.0-latest-batteries
 
 RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
