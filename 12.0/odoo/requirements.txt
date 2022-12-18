@@ -4,3 +4,7 @@ raven
 sentry_sdk
 click-odoo-contrib
 urllib3==1.24.3
+apispec
+cerberus
+pyquerystring
+accept_language
