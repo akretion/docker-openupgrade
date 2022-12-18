@@ -1,4 +1,5 @@
 odoorpc
 openupgradelib
 raven
+sentry_sdk
 click-odoo-contrib
