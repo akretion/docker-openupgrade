@@ -1,3 +1,4 @@
 odoorpc
 openupgradelib
 raven
+click-odoo-contrib
