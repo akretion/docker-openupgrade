@@ -3,3 +3,7 @@ openupgradelib>=3.3.3
 raven
 click-odoo-contrib # optional but can be nice to have
 sentry_sdk
+locomotivecms
+cerberus
+pyquerystring
+parse-accept-language
