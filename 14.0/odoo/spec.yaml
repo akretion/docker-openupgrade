@@ -186,11 +186,6 @@ odoo-usability:
 
 odoo-mooncard-connector:
     src: https://github.com/akretion/odoo-mooncard-connector 14.0
-    remotes:
-        ak: https://github.com/akretion/odoo-mooncard-connector.git
-    merges:
-        - ak 14.0
-        - ak 14-migration-script-base-newgen-payment-card
 
 shopinvader:
     src: https://github.com/shopinvader/odoo-shopinvader 14.0
