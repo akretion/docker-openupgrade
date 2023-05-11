@@ -1,11 +1,3 @@
-odoo:
-    remotes:
-        ak: https://github.com/akretion/OpenUpgrade.git
-        oca: https://github.com/OCA/OpenUpgrade.git
-        ef: https://github.com/Eficent/OpenUpgrade.git
-    merges:
-        - oca 13.0
-
 account-closing:
     src: https://github.com/OCA/account-closing 13.0
 

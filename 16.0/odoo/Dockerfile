@@ -1,4 +1,4 @@
-FROM ghcr.io/akretion/odoo-docker:15.0-latest
+FROM ghcr.io/akretion/odoo-docker:16.0-latest
 
 RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \

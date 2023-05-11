@@ -1,44 +1,165 @@
-python-barcode==0.12.0
-py3o.template
-py3o.formats
-# auth_totp
-pyotp
-# auth_signup_verify_email
-email_validator
-# auth_u2f
-python-u2flib-server
-# password_security
-zxcvbn
-# web_widget_bokeh_chart
-bokeh==1.1.0
-# web_widget_plotly_chart
-plotly==4.1.0
-PyPDF2
-phonenumbers
-# mail_inline_css
+aiohttp
+aiohttp
+# generated from manifests external_dependencies
+python-stdnum>=1.16
+# generated from manifests external_dependencies
+extract_msg
 premailer
-cachetools>=2.0.1
-requests-oauthlib
-
-Voicent-Python
-SOAPpy
-py-Asterisk
-raven
-openpyxl
+# generated from manifests external_dependencies
+python-dateutil
+# generated from manifests external_dependencies
+chardet
+ofxparse
 xlrd
-xlwt
+# generated from manifests external_dependencies
+bokeh==2.3.1
+mpld3
+plotly==5.4.0
+# generated from manifests external_dependencies
+python-dateutil
+# generated from manifests external_dependencies
+openupgradelib
+pytz
+xlrd
+# generated from manifests external_dependencies
+lxml
+unidecode
+# generated from manifests external_dependencies
+dicttoxml
+PyPDF2
+roulier
+unidecode
+xmltodict
+zeep
+# generated from manifests external_dependencies
+cryptography
+email_validator
+lxml
+pyjwt
+pysaml2
+python-jose
+python-ldap
+zxcvbn
+# generated from manifests external_dependencies
+openupgradelib
+# generated from manifests external_dependencies
+email_validator
+erpbrasil.assinatura
+erpbrasil.base
+erpbrasil.edoc
+erpbrasil.edoc.pdf
+erpbrasil.transmissao
+nfelib
+num2words
+phonenumbers
+pycep_correios
+pyyaml
+satcomum
+unidecode
+workalendar
+xmldiff
+# generated from manifests external_dependencies
+xlrd
+# generated from manifests external_dependencies
+requests
+# generated from manifests external_dependencies
+cryptography
+# generated from manifests external_dependencies
+email-validator
+phonenumbers
+python-stdnum
+# generated from manifests external_dependencies
+dateparser==1.1.1
+factur-x
+invoice2data
+ovh
+pdfplumber
+phonenumbers
+pyyaml
+regex
+xmlschema
+# generated from manifests external_dependencies
+openupgradelib
+# generated from manifests external_dependencies
+odoo-test-helper
+# generated from manifests external_dependencies
+cryptography
+#endesive
+py3o.formats
+py3o.template
+# generated from manifests external_dependencies
+apispec
+apispec>=4.0.0
+cerberus
+contextvars;python_version<"3.7"
+extendable
+extendable-pydantic
+graphene
+graphql_server
+jsondiff
+marshmallow
+marshmallow-objects>=2.0.0
+parse-accept-language
+pydantic
+pyquerystring
+typing-extensions
+# generated from manifests external_dependencies
+openupgradelib
+# generated from manifests external_dependencies
+openupgradelib
+# generated from manifests external_dependencies
+cerberus
+locomotivecms
+python-magic
+python-slugify
+python-stdnum
+slugify
+unidecode
+validators
+# generated from manifests external_dependencies
+cachetools
+# generated from manifests external_dependencies
+num2words
+# generated from manifests external_dependencies
+Avalara
+phonenumbers
+py-Asterisk
+# generated from manifests external_dependencies
+phonenumbers
+requests
+Voicent-Python
+# generated from manifests external_dependencies
+numpy-financial<=1.0.0
+numpy>=1.15
+vatnumber
+# generated from manifests external_dependencies
+# generated from manifests external_dependencies
+pdf2image
+pyzbar
+# generated from manifests external_dependencies
+# generated from manifests external_dependencies
+acme
+astor
+cryptography
+dataclasses
+dnspython
+josepy
+odoorpc
+openpyxl
+openupgradelib
 pysftp
-pygount
+sentry_sdk>=1.17.0
+unidecode
+# generated from manifests external_dependencies
+python-barcode
+# generated from manifests external_dependencies
+pgpy
+python-stdnum
+requests
+requests_oauthlib
+unicodecsv
+unidecode
+# generated from manifests external_dependencies
+# generated from manifests external_dependencies
+# generated from manifests external_dependencies
 pycountry
-num2words==0.5.4
-pycep-correios
-erpbrasil.base==1.1.0
-python-jose[cryptography] # auth_oidc
-apispec # rest modules
-ovh # account_invoice_download_ovh
-pdfplumber # account_invoice_import_simple_pdf
-python-stdnum>=1.14 # l10n_fr_intrastat_service
-
-astor # base_view_inheritance_extension
-python-slugify # shopinvader
-odoo_test_helper

@@ -1,0 +1,7 @@
+odoo:
+  remotes:
+    ak: https://github.com/akretion/OpenUpgrade
+    oca: https://github.com/OCA/OpenUpgrade
+    ef: https://github.com/Eficent/OpenUpgrade
+  merges:
+    - oca 13.0

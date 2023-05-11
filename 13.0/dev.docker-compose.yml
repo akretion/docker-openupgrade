@@ -1,37 +1,59 @@
+networks:
+  traefik:
+    external: true
+  local:
 services:
   db:
+    image: postgres:13
+    user: "${UID}:${UID}"
     environment:
       - POSTGRES_USER=odoo
-      - POSTGRES_DB=db
-    image: quay.io/akretion/postgresql:10
+      - POSTGRES_DB=openupgrade13
+      - POSTGRES_PASSWORD=odoo
     volumes:
       - .db/:/var/lib/postgresql/data
-#      - ./migr-postgresql.conf:/etc/postgresql/postgresql.conf
+    networks:
+      - local
   odoo:
     build: odoo
     environment:
-      - PYTHONDONTWRITEBYTECODE=True
-      - LOCAL_USER_ID=$UID
-      - DB_USER=odoo
-      - DB_PASS=odoo
-      - DB_NAME=openupgrade13
-      - RUNNING_ENV=dev
-      - LIMIT_TIME_CPU=6000000
-      - LIMIT_TIME_REAL=12000000
-      - LIMIT_MEMORY_SOFT=5147483648
-      - LIMIT_MEMORY_HARD=5684354560
-    depends_on:
+      PGDATABASE: openupgrade13
+      PGHOST: db
+      PGPASSWORD: odoo
+      PGUSER: odoo
+      PYTHONDONTWRITEBYTECODE: "True"
+      LOCAL_USER_ID: $UID
+      LIMIT_TIME_CPU: 6000000
+      LIMIT_TIME_REAL: 12000000
+      LIMIT_MEMORY_SOFT: 5147483648
+      LIMIT_MEMORY_HARD: 5684354560
+      ADDONS_PATH: /odoo/links,/odoo/local-src,/odoo/src/odoo/addons,/odoo/src/addons
+    links:
       - db
+    networks:
+      - local
     volumes:
       - ./odoo:/odoo
       - ./data/addons:/data/odoo/addons
       - ./data/filestore:/data/odoo/filestore
       - ./data/sessions:/data/odoo/sessions
     labels:
-      traefik.enable: true
-      traefik.longpolling.frontend.rule: "Host:migration.dy;PathPrefix:/longpolling/"
-      traefik.www.frontend.rule: "Host:migration.dy"
-      docky.main.service: true
-      docky.user: odoo
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.routers.openupgrade13.rule=Host(`openupgrade13.localhost`)"
+      - "traefik.http.routers.openupgrade13-long.rule=Host(`openupgrade13.localhost`)
+        && PathPrefix(`/longpolling/`)"
+      - "traefik.http.routers.openupgrade13.service=openupgrade13odoo"
+      - "traefik.http.routers.openupgrade13-long.service=openupgrade13odoo_long"
+      - "traefik.http.services.openupgrade13odoo.loadbalancer.server.port=8069"
+      - "traefik.http.services.openupgrade13odoo_long.loadbalancer.server.port=8072"
+      - "traefik.http.middlewares.openupgrade13corsHeader.headers.accessControlAllowMethods=
+        GET,POST,OPTIONS,PUT"
+      - "traefik.http.middlewares.openupgrade13corsHeader.headers.accessControlAllowOriginList=*"
+      - "traefik.http.middlewares.openupgrade13corsHeader.headers.accessControlAllowHeaders=DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,api-key,partner-email,authorization,sess-cart-id,website-unique-key"
+      - "traefik.http.middlewares.openupgrade13corsHeader.headers.accessControlExposeHeaders=Content-Length,Content-Range"
+      - "traefik.http.middlewares.openupgrade13corsHeader.headers.addVaryHeader=true"
+      - "traefik.http.routers.openupgrade13.middlewares=openupgrade13corsHeader"
+      - "docky.help=http://openupgrade13.localhost"
 
 version: '3'

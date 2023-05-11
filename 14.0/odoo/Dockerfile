@@ -1,34 +1,32 @@
-FROM camptocamp/odoo-project:14.0-latest-batteries
+FROM ghcr.io/akretion/odoo-docker:14.0-latest
 
 RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
-    apt-get install -y git vim libpq-dev && \
-    apt-get upgrade -y && \
-    /install/dev_package.sh && \
-    pip install psycopg2 --upgrade && \
+    apt-get install -y libcairo2-dev libpq-dev && \
     apt-get clean
 
-COPY ./src /odoo/src
-RUN pip install -e /odoo/src
+# Fix for 2to3
+RUN --mount=type=cache,target=/root/.cache pip install setuptools==58
+
+COPY odoo-spec.yaml /odoo/odoo-spec.yaml
+ENV BUILD_RESTRICT_LANG=fr.po
+RUN --mount=type=cache,target=/root/.cache /install/build-odoo
+RUN --mount=type=cache,target=/root/.cache pip install -e /odoo/src
 
 # generate oca requirement with
 # find odoo/external-src/ -name 'requirements.txt' -exec cat {} \; > odoo/oca_requirements.txt
 # then remove duplicate
 
+COPY ./spec.yaml /odoo/spec.yaml
+RUN --mount=type=cache,target=/root/.cache /install/build-odoo-external
+
 COPY ./oca_requirements.txt /odoo/oca_requirements.txt
-RUN pip install -r /odoo/oca_requirements.txt
+RUN --mount=type=cache,target=/root/.cache pip install -r /odoo/oca_requirements.txt
 
 COPY ./requirements.txt /odoo/requirements.txt
-RUN pip install -r /odoo/requirements.txt
+RUN --mount=type=cache,target=/root/.cache pip install -r /odoo/requirements.txt
 
-COPY ./external-src /odoo/external-src
 COPY ./local-src /odoo/local-src
-COPY ./VERSION /odoo/VERSION
-COPY ./setup.py /odoo/setup.py
-COPY ./songs /odoo/songs
-COPY ./migration.yml /odoo/migration.yml
-COPY ./links /odoo/links
-RUN pip install -e /odoo
 
 ENV SERVER_WIDE_MODULES=base,web,openupgrade_framework
 
