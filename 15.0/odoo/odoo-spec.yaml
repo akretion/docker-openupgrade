@@ -1,0 +1,3 @@
+odoo:
+    src: https://github.com/odoo/odoo 15.0
+    depth: 1

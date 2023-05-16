@@ -8,10 +8,6 @@ openupgrade:
         - oca 14.0
         - ak 14-module-renaming
 
-odoo:
-    src: https://github.com/odoo/odoo 14.0
-    depth: 1
-
 account-closing:
     src: https://github.com/OCA/account-closing 14.0
 
@@ -190,10 +186,9 @@ odoo-mooncard-connector:
         ak: https://github.com/akretion/odoo-mooncard-connector.git
     merges:
         - ak 14.0
-        - ak 14-migration-script-base-newgen-payment-card
 
-shopinvader:
-    src: https://github.com/shopinvader/odoo-shopinvader 14.0
+#shopinvader:
+#    src: https://github.com/shopinvader/odoo-shopinvader 14.0
 
 
 subcontractor:
