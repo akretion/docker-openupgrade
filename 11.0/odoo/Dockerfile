@@ -1,5 +1,8 @@
 FROM ghcr.io/camptocamp/odoo-project:11.0-latest-batteries
 
+RUN rm /etc/apt/sources.list
+COPY sources.list /etc/apt/sources.list
+
 RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
     apt-get install -y git vim libpq-dev && \
