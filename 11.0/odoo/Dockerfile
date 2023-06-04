@@ -1,11 +1,11 @@
 FROM ghcr.io/camptocamp/odoo-project:11.0-latest-batteries
 
-RUN rm /etc/apt/sources.list
-COPY sources.list /etc/apt/sources.list
+#RUN rm /etc/apt/sources.list
+#COPY sources.list /etc/apt/sources.list
 
 RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
-    apt-get install -y git vim libpq5=12.12-0ubuntu0.20.04.1 libpq-dev && \
+    apt-get install -y git vim && \
     apt-get upgrade -y && \
     /install/dev_package.sh && \
     pip install psycopg2 --upgrade && \
