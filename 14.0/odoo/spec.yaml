@@ -183,7 +183,7 @@ bank-statement-reconcile-simple:
     src: https://github.com/akretion/bank-statement-reconcile-simple 14.0
 
 odoo-usability:
-    src: https://github.com/akretion/odoo-usability 14.0
+    src: https://github.com/akretion/odoo-usability 14-fix-mig-account-usability
 
 odoo-mooncard-connector:
     src: https://github.com/akretion/odoo-mooncard-connector 14.0
