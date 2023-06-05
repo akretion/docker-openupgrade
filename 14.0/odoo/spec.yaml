@@ -7,6 +7,7 @@ openupgrade:
     merges:
         - oca 14.0
         - ak 14-module-renaming
+        - ak 14-fix-ambigous-query
 
 odoo:
     src: https://github.com/odoo/odoo 14.0
