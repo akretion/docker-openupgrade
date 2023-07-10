@@ -107,6 +107,12 @@ purchase-workflow:
 reporting-engine:
     src: https://github.com/OCA/reporting-engine 12.0
 
+rest-framework:
+    src: https://github.com/OCA/rest-framework 12.0
+
+queue:
+    src: https://github.com/OCA/queue 12.0
+
 sale-financial:
     src: https://github.com/OCA/sale-financial 12.0
 
@@ -119,8 +125,14 @@ sale-workflow:
 server-auth:
     src: https://github.com/OCA/server-auth 12.0
 
+server-env:
+    src: https://github.com/OCA/server-env 12.0
+
 server-tools:
     src: https://github.com/OCA/server-tools 12.0
+
+server-ux:
+    src: https://github.com/oca/server-ux 12.0
 
 social:
     src: https://github.com/OCA/social 12.0
@@ -139,3 +151,10 @@ stock-logistics-workflow:
 
 web:
     src: https://github.com/OCA/web 12.0
+
+# Not OCA generic
+odoo-usability:
+    src: https://github.com/akretion/odoo-usability 12.0
+
+shopinvader:
+    src: https://github.com/shopinvader/odoo-shopinvader 12.0
